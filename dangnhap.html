@@ -1,170 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>bai2</title>
-    <style type="text/css">
-      body {
-        width: 80%;
-        height: auto;
-        margin: 0 auto;
-        font-family: arial;
-        border: 1px solid;
-      }
-      * {
-        box-sizing: border-box;
-        margin: 0 auto;
-      }
-      .khungtren {
-        width: 100%;
-        height: 100px;
-        background-image: url("../IMG/logo.jpg");
-        background-position: 20% 50%;
-      }
-      .khungtren h2 {
-        margin-left: 50%;
-        padding-top: 65px;
-        letter-spacing: 15px;
-        color: rgb(255, 255, 255);
-      }
-      .left {
-        width: 20%;
-        float: left;
-        background-color: rgb(54, 54, 54);
-      }
-      .left ul li {
-        list-style-type: none;
-        border: 1px solid;
-        border-bottom: none;
-        line-height: 2;
-        margin-left: -40px;
-      }
-      ul li a {
-        text-decoration: none;
-        color: azure;
-      }
-      ul li:hover {
-        background-color: rgb(115, 115, 115);
-      }
-      .left ul li:last-child {
-        border-bottom: 1px solid;
-      }
-      .right {
-        width: 80%;
-        height: 260px;
-        float: left;
-        line-height: 2;
-        border-left: 1px solid;
-      }
-      .right p {
-        text-align: center;
-        font-weight: bold;
-        font-size: 1.2em;
-      }
-      .right .hoptt {
-        margin-left: 25%;
-        float: left;
-        text-align: end;
-      }
-      .right .nhapinput {
-        float: left;
-      }
-      input {
-        padding: 4px;
-      }
-      select {
-        padding: 4px;
-      }
-      .nhapinput img {
-        width: 100px;
-        height: 100px;
-        margin-left: 200px;
-        margin-top: -100px;
-      }
-      button {
-        padding: 4px;
-        margin: -2px;
-      }
-      .bangds {
-        width: 100%;
-      }
-      .bangds table {
-        width: 80%;
-        margin-left: 20%;
-      }
-      .khungduoi {
-        width: 100%;
-        height: 50px;
-        background-color: rgb(42, 47, 51);
-        margin-top: 200px;
-        clear: both;
-        text-align: center;
-        line-height: 3;
-        color: rgb(123, 124, 126);
-      }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="shortcut icon" href="../img/logo4.png" />
+    <link rel="stylesheet" href="../css/formdk.css" />
+    <title>Đăng nhập</title>
   </head>
-  <body>
-    <div class="khungtren">
-      <h2>T-SPEED COMPANY</h2>
+<body>
+  <div class="background">
+    <div class="shape"></div>
+    <div class="shape"></div>
+  </div>
+
+  <form class="modal-content" action="">
+    <div class="exit"><a href="./index.html"><i class='bx bx-x'></i></a>
     </div>
-    <div class="khunggiua">
-      <div class="left">
-        <ul>
-          <li><a href="#">Quảng cáo</a></li>
-          <li><a href="#">Giới thiệu sản phẩm</a></li>
-          <li><a href="#">Hợp tác</a></li>
-          <li><a href="#">Các đại lý</a></li>
-          <li><a href="#">Tuyển dụng</a></li>
-          <li><a href="#">Liện hệ</a></li>
-          <li><a href="#">Đặt hàng</a></li>
-        </ul>
-      </div>
-      <div class="right">
-        <p>Đăng ký giấy phép lái xe ôtô</p>
-        <div class="hoptt">
-          <label for="hoten">Họ tên</label><br />
-          <label for="CMND">Số CMND</label><br />
-          <label for="hokhau">Hộ khẩu</label><br />
-          <label for="hinhxe">Hình xe</label><br />
-        </div>
-        <div class="nhapinput">
-          <input type="text" id="hoten" /><br />
-          <input type="number" id="CMND" /><br />
-          <select id="hokhau">
-            <option>TP Ho Chi Minh</option>
-            <option>TP Ha Noi</option>
-            <option>TP Viet Tri</option></select
-          ><br />
-          <select id="hinhxe">
-            <option>Toyota</option>
-            <option>Honda</option>
-            <option>HuynhDai</option>
-          </select>
-          <img src="../Img/phan-loai-xe-o-to.webp" alt="Loại hình xe" /><br />
-          <button type="menu">Them</button>
-          <button type="reset">Xoa</button>
-        </div>
-      </div>
-      <div class="bangds">
-        <table border="1px" cellspacing="0">
-          <tr>
-            <th colspan="3">DANH SÁCH ĐĂNG KÝ XE</th>
-          </tr>
-          <tr>
-            <th>STT</th>
-            <th>HỌ TÊN</th>
-            <th>XEM CHI TIẾT</th>
-          </tr>
-          <tr>
-            <td>1</td>
-            <td>Nguyễn Thị Thanh Thảo</td>
-            <td>chi tiêt</td>
-          </tr>
-        </table>
-      </div>
-    </div>
-    <div class="khungduoi">Copyright &copy Bản quyền thuộc tại H-SHOP</div>
-  </body>
+    
+    <h3>Đăng Nhập</h3>
+
+    <label for="userName">Tên đăng nhập:</label><br>
+    <input type="text" id="userName" name="userName" required placeholder="Email hoặc tên đăng nhập">
+    <span id="error-user"></span><br>
+    <label for="pass">Mật khẩu:</label><br>
+    <input type="password" id="pass" name="pass" required placeholder="Mật khẩu">
+    <span id="error-pass"></span><br>
+    <button type="button" id="submitButton" onclick="check()">
+      Đăng Nhập
+    </button>
+    <p>Bạn chưa có tải khoản? <a href="dangky.html">Đăng Ký !</a></p>
+    <script src="/js/month.js"></script>
+</body>
+
 </html>
