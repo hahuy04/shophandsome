@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap");
+body {
+   font-family: arial;
+    margin: 0 auto;
+  }
+*{
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+  .background {
+    width: 430px;
+    height: 480px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 50%;
+  }
+#error-pass, #error-user{
+  color: rgb(255, 78, 78);
+}
+  .background .shape {
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    border-radius: 50%;
+  }
+
+  .shape:first-child {
+    background: linear-gradient(#dd63ff, #59d5ff);
+    left: -80px;
+    top: -80px;
+  }
+
+  .shape:last-child {
+    background: linear-gradient(to top, #eb5cfe, #1ec3fa);
+    right: -30px;
+    bottom: -80px;
+  }
+
+  form {
+    height: 520px;
+    width: 400px;
+    background-color: #000000b8;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+    padding: 50px 35px;
+  }
+
+  form * {
+    color: #ffffff;
+    letter-spacing: 0.5px;
+    outline: none;
+    border: none;
+  }
+  .exit{
+    margin-top: -23px;
+    margin-left: 99%;
+  }
+  .exit i{
+    margin-top: -20px;
+    font-size: 30px;
+    color: #b5b5b575;
+  }
+
+  form h3 {
+    font-size: 32px;
+    font-weight: bold;
+    line-height: 42px;
+    text-align: center;
+    color: #ffffff;
+  }
+
+  label {
+    display: block;
+    margin-top: 10px;
+    font-size: 16px;
+  }
+
+  input {
+    display: block;
+    height: 50px;
+    width: 100%;
+    background-color: #ffffff45;
+    border-radius: 5px;
+    padding: 0 10px;
+    margin-top: 5px;
+    font-size: 14px;
+  }
+
+  ::placeholder {
+    color: #ffffffd5;
+  }
+
+  button {
+    margin-top: 2px;
+    margin-left: 1px;
+    width: 100%;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 10px 0;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background-color: #1f1f1fe3;
+  }
+
+  .social {
+    margin-top: 30px;
+    margin-left: 20px;
+    display: flex;
+  }
+
+  .social div {
+    background: rgb(34, 1, 246);
+    width: 100%;
+
+    padding: 5px 10px 10px 5px;
+    background-color: rgba(255, 255, 255, 0, 07);
+    color: #ffffff;
+    text-align: center;
+  }
+
+  form a {
+    color: rgb(30, 165, 255);
+    font-size: 16px;
+
+
+  }
+
+  a:hover {
+    color: #5dc4e6
+  }
